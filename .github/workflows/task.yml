@@ -1,9 +1,12 @@
 name: Check Update and Upload Releases
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */2 * * *'
 
 permissions:
   contents: write
@@ -12,30 +15,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
-          persist-credentials: false
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Setup Go environment
+        uses: actions/setup-go@v3
         with:
-          python-version: '3.12'
+          go-version: '1.26'
 
-      - name: Install dependencies
-        run: pip install requests
+      - name: Run
+        run: go run main.go
 
-      - name: Ensure last_download.txt exists
+      - name: Commit files
         run: |
-          if [ ! -f last_download.txt ]; then
-            echo "0.0.0.0" > last_download.txt
-          fi
-
-      - name: Check Update
-        run: python fetch.py
-
-      - name: Download Latest Stable Release
-        run: python download.py
+          git config --local user.email "github-action[bot]@github.com"
+          git config --local user.name "github-action[bot]"
+          git pull --rebase --autostash
+          git add --all
+          git commit -m ":pencil: Auto update Chrome at  $(date +"%Y-%m-%d %H:%M")"
+          git push origin main
 
       - name: Get Tag
         id: get_tag
@@ -50,33 +49,69 @@ jobs:
             echo "exe_exists=false" >> $GITHUB_ENV
           fi
 
-      - name: Commit Files
-        env:
-          TZ: America/New_York
+      - name: Check if Tag Exists
+        id: check_tag
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            echo "has_changes=false" >> $GITHUB_ENV
+          if git rev-parse "refs/tags/${{ env.tag }}" >/dev/null 2>&1; then
+            echo "tag_exists=true" >> $GITHUB_ENV
           else
-            git commit -m ":pencil: Auto update Edge at $(date +"%Y-%m-%d %H:%M")"
-            echo "has_changes=true" >> $GITHUB_ENV
+            echo "tag_exists=false" >> $GITHUB_ENV
           fi
 
-      - name: Push Changes
-        if: env.has_changes == 'true'
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ github.token }}
-          branch: ${{ github.ref }}
+      - name: Create Tag
+        if: env.exe_exists == 'true' && env.tag_exists == 'false'
+        run: |
+          git tag ${{ env.tag }}
+          git push origin ${{ env.tag }}
+
+      - name: Download Chrome++
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          API="https://api.github.com/repos/Bush2021/chrome_plus/releases/latest"
+
+          read FILE_NAME DOWNLOAD_URL <<<"$(
+          curl -fsSL \
+          -H "Authorization: Bearer $GITHUB_TOKEN" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          "$API" |
+          jq -r '
+          .assets[]
+          | select(.name | test("^Chrome\\+\\+_v.*_x86_x64_arm64\\.7z$"))
+          | "\(.name) \(.browser_download_url)"
+          ' | head -n 1
+          )"
+
+          if [ -z "${FILE_NAME:-}" ] || [ -z "${DOWNLOAD_URL:-}" ]; then
+            echo "Chrome++ package not found."
+            exit 1
+          fi
+
+          if gh api \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "repos/$GITHUB_REPOSITORY/releases/tags/${{ env.tag }}" \
+            --jq '.assets[].name' 2>/dev/null | grep -Fxq "$FILE_NAME"; then
+            echo "Chrome++ $FILE_NAME is already in release ${{ env.tag }}."
+            echo "chrome_plus_update=false" >> "$GITHUB_ENV"
+          else
+            echo "New Chrome++ package found: $FILE_NAME"
+            curl -fsSL -o "$FILE_NAME" "$DOWNLOAD_URL"
+            echo "chrome_plus_update=true" >> "$GITHUB_ENV"
+          fi
 
       - name: Upload Release
-        if: env.exe_exists == 'true'
-        uses: softprops/action-gh-release@v0.1.15
+        if: env.exe_exists == 'true' || env.chrome_plus_update == 'true'
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ env.tag }}
-          files: '*.exe'
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+          files: |
+            *.exe
+            *.7z
+
+      - name: Reset Main Branch
+        if: env.exe_exists == 'true' && env.tag_exists == 'false'
+        run: |
+          git checkout --orphan temp_branch
+          git add -A
+          git commit -m "init"
+          git push --force origin temp_branch:main
