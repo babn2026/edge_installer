@@ -2,7 +2,7 @@
 稳定版存档：<https://github.com/babn2026/edge_installer/releases>
 
 最后检测更新时间
-2026-09-30 09:21:03 (UTC-4)
+2026-09-30 12:51:32 (UTC-4)
 
 ## 注意
 * Microsoft 直链会过期，请及时保存。
@@ -124,9 +124,9 @@
 **下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e6854a43-6830-4901-b0f1-7f1f052ae0bf?P1=1791379263&P2=404&P3=2&P4=nveE88dbo6quMZhBkNo71xo1OorG6UAnvkD6SD7BnmQj%2fjCambgfLTmGQuBdt%2b6JTSZYofKbXoENY66Zz5ROyg%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e6854a43-6830-4901-b0f1-7f1f052ae0bf?P1=1791379263&P2=404&P3=2&P4=nveE88dbo6quMZhBkNo71xo1OorG6UAnvkD6SD7BnmQj%2fjCambgfLTmGQuBdt%2b6JTSZYofKbXoENY66Zz5ROyg%3d%3d)  
 
 ## canary ARM64
-**最新版本**：156.0.4309.0  
-**文件大小**：201.64 MB  
-**文件名**：MicrosoftEdge_ARM64_156.0.4309.0.exe  
-**校验值（Sha256）**：496652de37aba61c1878e460ba99220d49cd96b779a6e515d95e13037456c409  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/3e23b83e-e122-416d-9f30-981a3c75d0cf?P1=1791341750&P2=404&P3=2&P4=GzKJrkTZ3nAXczTmp1A3cVBo37jzpKJ9UrWkctWIMrC3zLtgmME8A0JVmuWUxaSnCymYJ8pxZOfVeRC5MrmU9Q%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/3e23b83e-e122-416d-9f30-981a3c75d0cf?P1=1791341750&P2=404&P3=2&P4=GzKJrkTZ3nAXczTmp1A3cVBo37jzpKJ9UrWkctWIMrC3zLtgmME8A0JVmuWUxaSnCymYJ8pxZOfVeRC5MrmU9Q%3d%3d)  
+**最新版本**：156.0.4310.0  
+**文件大小**：201.75 MB  
+**文件名**：MicrosoftEdge_ARM64_156.0.4310.0.exe  
+**校验值（Sha256）**：f7b01e84d50c0dc90e70a86b11b535559cdc33b0e7b7da4a0e5ef3856bc5b653  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/84ffced7-f248-40e3-9a5c-13ddf7c1ed86?P1=1791391893&P2=404&P3=2&P4=U2ztocg1%2bgMSnoNps%2fD2SVOTBZLf%2f2KsdGeFxKQXdYFz0JH5K75uMpL40xQdeJdyUdQqypnhFz4AzUsxfx1CaA%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/84ffced7-f248-40e3-9a5c-13ddf7c1ed86?P1=1791391893&P2=404&P3=2&P4=U2ztocg1%2bgMSnoNps%2fD2SVOTBZLf%2f2KsdGeFxKQXdYFz0JH5K75uMpL40xQdeJdyUdQqypnhFz4AzUsxfx1CaA%3d%3d)  
 
