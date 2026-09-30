@@ -3,54 +3,80 @@ name: Check Update and Upload Releases
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 */3 * * *'
+    - cron: '0 */3 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4.1.1
-      with:
-        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-    - name: Check Update
-      run: python fetch.py
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-    - name: Download Latest Stable Release
-      run: python download.py
+      - name: Install dependencies
+        run: pip install requests
 
-    - name: Get Tag
-      id: get_tag
-      run: echo "tag=$(cat last_download.txt)" >> $GITHUB_ENV
+      - name: Ensure last_download.txt exists
+        run: |
+          if [ ! -f last_download.txt ]; then
+            echo "0.0.0.0" > last_download.txt
+          fi
 
-    - name: Check for EXE Files
-      id: check_files
-      run: |
-        if find . -name "*.exe" -print -quit | grep -q .; then
+      - name: Check Update
+        run: python fetch.py
+
+      - name: Download Latest Stable Release
+        run: python download.py
+
+      - name: Get Tag
+        id: get_tag
+        run: echo "tag=$(cat last_download.txt)" >> $GITHUB_ENV
+
+      - name: Check for EXE Files
+        id: check_files
+        run: |
+          if find . -name "*.exe" -print -quit | grep -q .; then
             echo "exe_exists=true" >> $GITHUB_ENV
-        else
-          echo "exe_exists=false" >> $GITHUB_ENV
-        fi
+          else
+            echo "exe_exists=false" >> $GITHUB_ENV
+          fi
 
-    - name: Commit Files
-      env:
-        TZ: America/New_York
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add .
-        git commit -m ":pencil: Auto update Edge at  $(date +"%Y-%m-%d %H:%M")" -a
+      - name: Commit Files
+        env:
+          TZ: America/New_York
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "has_changes=false" >> $GITHUB_ENV
+          else
+            git commit -m ":pencil: Auto update Edge at $(date +"%Y-%m-%d %H:%M")"
+            echo "has_changes=true" >> $GITHUB_ENV
+          fi
 
-    - name: Push Changes
-      uses: ad-m/github-push-action@v0.8.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+      - name: Push Changes
+        if: env.has_changes == 'true'
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ github.token }}
+          branch: ${{ github.ref }}
 
-    - name: Upload Release
-      if: env.exe_exists == 'true'
-      uses: softprops/action-gh-release@v0.1.15
-      with:
-        tag_name: ${{ env.tag }}
-        files: '*.exe'
+      - name: Upload Release
+        if: env.exe_exists == 'true'
+        uses: softprops/action-gh-release@v0.1.15
+        with:
+          tag_name: ${{ env.tag }}
+          files: '*.exe'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
