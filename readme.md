@@ -1,29 +1,29 @@
 # Microsoft Edge 离线安装包下载链接（请使用 7-Zip 解压）
-稳定版存档：<https://github.com/rnus699/edge_installer/releases>
+稳定版存档：<https://github.com/babn2026/edge_installer/releases>
 
 最后检测更新时间
-2026-09-30 05:09:11 (UTC-4)
+2026-09-30 09:21:03 (UTC-4)
 
 ## 注意
 * Microsoft 直链会过期，请及时保存。
 * 下载文件名可能是乱码，有需要的话请自行重命名。
 
 ## 目录
-* [stable win7and8 x86](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-win7and8-x86)
-* [stable win7and8 x64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-win7and8-x64)
-* [stable win7and8 ARM64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-win7and8-ARM64)
-* [stable x86](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-x86)
-* [stable x64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-x64)
-* [stable ARM64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#stable-ARM64)
-* [beta x86](https://github.com/rnus699/edge_installer?tab=readme-ov-file#beta-x86)
-* [beta x64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#beta-x64)
-* [beta ARM64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#beta-ARM64)
-* [dev x86](https://github.com/rnus699/edge_installer?tab=readme-ov-file#dev-x86)
-* [dev x64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#dev-x64)
-* [dev ARM64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#dev-ARM64)
-* [canary x86](https://github.com/rnus699/edge_installer?tab=readme-ov-file#canary-x86)
-* [canary x64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#canary-x64)
-* [canary ARM64](https://github.com/rnus699/edge_installer?tab=readme-ov-file#canary-ARM64)
+* [stable win7and8 x86](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-win7and8-x86)
+* [stable win7and8 x64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-win7and8-x64)
+* [stable win7and8 ARM64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-win7and8-ARM64)
+* [stable x86](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-x86)
+* [stable x64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-x64)
+* [stable ARM64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#stable-ARM64)
+* [beta x86](https://github.com/babn2026/edge_installer?tab=readme-ov-file#beta-x86)
+* [beta x64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#beta-x64)
+* [beta ARM64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#beta-ARM64)
+* [dev x86](https://github.com/babn2026/edge_installer?tab=readme-ov-file#dev-x86)
+* [dev x64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#dev-x64)
+* [dev ARM64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#dev-ARM64)
+* [canary x86](https://github.com/babn2026/edge_installer?tab=readme-ov-file#canary-x86)
+* [canary x64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#canary-x64)
+* [canary ARM64](https://github.com/babn2026/edge_installer?tab=readme-ov-file#canary-ARM64)
 
 ## stable win7and8 x86
 **最新版本**：109.0.1518.140  
@@ -110,18 +110,18 @@
 **下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/1625caf1-ad7f-4abe-ab69-2dfd9d07fb9a?P1=1791341748&P2=404&P3=2&P4=VX11SvjVy8E3CKBm8Ow7v%2fTtbO4OkWsudlK6KRHxlgOztOfR3J%2bEZ8L0yCrZWnpopLOjBswVLdERxFZG5I%2bmmw%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/1625caf1-ad7f-4abe-ab69-2dfd9d07fb9a?P1=1791341748&P2=404&P3=2&P4=VX11SvjVy8E3CKBm8Ow7v%2fTtbO4OkWsudlK6KRHxlgOztOfR3J%2bEZ8L0yCrZWnpopLOjBswVLdERxFZG5I%2bmmw%3d%3d)  
 
 ## canary x86
-**最新版本**：156.0.4309.0  
-**文件大小**：175.51 MB  
-**文件名**：MicrosoftEdge_X86_156.0.4309.0.exe  
-**校验值（Sha256）**：0af6e3196d180ab59e6dc3ace83c29e1337eb38751392526c7da48e583061883  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ec789f49-b421-44b5-ae4c-1e91e2c36aa4?P1=1791341749&P2=404&P3=2&P4=BJvoe6f3Z2hQ49HzjZxLGkD%2bCH3Au%2ft9VKt7QKrtK0ebopFK5Z5tdVF26rcloLksAZdcBJnomz%2fAom5yjcUY9g%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ec789f49-b421-44b5-ae4c-1e91e2c36aa4?P1=1791341749&P2=404&P3=2&P4=BJvoe6f3Z2hQ49HzjZxLGkD%2bCH3Au%2ft9VKt7QKrtK0ebopFK5Z5tdVF26rcloLksAZdcBJnomz%2fAom5yjcUY9g%3d%3d)  
+**最新版本**：156.0.4310.0  
+**文件大小**：175.56 MB  
+**文件名**：MicrosoftEdge_X86_156.0.4310.0.exe  
+**校验值（Sha256）**：cf6eb765174bbc090d14452fd024114659841296d99832e120d3b7a515930f15  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/0ca810f3-7cf0-4cce-9892-a4b41856930c?P1=1791379262&P2=404&P3=2&P4=EFQDl%2fHHtKZtuh%2bYPPcKiWfD1PbbUbNCnvI9iiJqaYVEJmyfbukzUd081HkDKbzE05ZhRkfMI88DJc2wHvh%2b9w%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/0ca810f3-7cf0-4cce-9892-a4b41856930c?P1=1791379262&P2=404&P3=2&P4=EFQDl%2fHHtKZtuh%2bYPPcKiWfD1PbbUbNCnvI9iiJqaYVEJmyfbukzUd081HkDKbzE05ZhRkfMI88DJc2wHvh%2b9w%3d%3d)  
 
 ## canary x64
-**最新版本**：156.0.4309.0  
-**文件大小**：198.39 MB  
-**文件名**：MicrosoftEdge_X64_156.0.4309.0.exe  
-**校验值（Sha256）**：74d60d26635e77f90e19871347e243acc6bc738218d5f5c0da6655b49f51a39a  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e36c4812-1109-42ee-a4c1-756354624434?P1=1791341749&P2=404&P3=2&P4=N4lTLZbhCSiUZSLX6HvPXV9C%2fZhl%2baoz75Q5wLXPHxqYK%2f%2bCQ3bre9WrOR5I6UIlbel%2buDnaxEzsbq25B4FZwQ%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e36c4812-1109-42ee-a4c1-756354624434?P1=1791341749&P2=404&P3=2&P4=N4lTLZbhCSiUZSLX6HvPXV9C%2fZhl%2baoz75Q5wLXPHxqYK%2f%2bCQ3bre9WrOR5I6UIlbel%2buDnaxEzsbq25B4FZwQ%3d%3d)  
+**最新版本**：156.0.4310.0  
+**文件大小**：198.44 MB  
+**文件名**：MicrosoftEdge_X64_156.0.4310.0.exe  
+**校验值（Sha256）**：16890a013b2f744e081a5a19c931dc279995c5a5f10dc790da110e710e0816a5  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e6854a43-6830-4901-b0f1-7f1f052ae0bf?P1=1791379263&P2=404&P3=2&P4=nveE88dbo6quMZhBkNo71xo1OorG6UAnvkD6SD7BnmQj%2fjCambgfLTmGQuBdt%2b6JTSZYofKbXoENY66Zz5ROyg%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e6854a43-6830-4901-b0f1-7f1f052ae0bf?P1=1791379263&P2=404&P3=2&P4=nveE88dbo6quMZhBkNo71xo1OorG6UAnvkD6SD7BnmQj%2fjCambgfLTmGQuBdt%2b6JTSZYofKbXoENY66Zz5ROyg%3d%3d)  
 
 ## canary ARM64
 **最新版本**：156.0.4309.0  
