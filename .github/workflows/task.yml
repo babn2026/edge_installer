@@ -3,10 +3,7 @@ name: Check Update and Upload Releases
 on:
   workflow_dispatch:
   schedule:
-  - cron: '50 */3 * * *'
-
-permissions:
-  contents: write
+  - cron: '0 */3 * * *'
 
 jobs:
   build:
@@ -14,8 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4.1.1
       with:
-        persist-credentials: false
-        fetch-depth: 0
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
 
     - name: Check Update
       run: python fetch.py
@@ -38,7 +35,7 @@ jobs:
 
     - name: Commit Files
       env:
-        TZ: Asia/Shanghai
+        TZ: America/New_York
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
