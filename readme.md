@@ -2,7 +2,7 @@
 稳定版存档：<https://github.com/babn2026/edge_installer/releases>
 
 最后检测更新时间
-2026-10-22 17:28:12 (UTC+8)
+2026-10-22 20:30:11 (UTC+8)
 
 ## 注意
 * Microsoft 直链会过期，请及时保存。
