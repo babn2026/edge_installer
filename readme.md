@@ -2,7 +2,7 @@
 稳定版存档：<https://github.com/babn2026/edge_installer/releases>
 
 最后检测更新时间
-2026-10-24 23:19:29 (UTC+8)
+2026-10-25 02:19:05 (UTC+8)
 
 ## 注意
 * Microsoft 直链会过期，请及时保存。
@@ -110,23 +110,23 @@
 **下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e750da03-ac89-46f5-a761-f8853cdd6c88?P1=1793147104&P2=404&P3=2&P4=nDU0jhVs1wYaug1pUuopYsMCIgOzZkse2hWxqCs8axu67tjUbv6t0nrafxrXs4whnUjfyDzXhYSvIgCeRuyCvw%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e750da03-ac89-46f5-a761-f8853cdd6c88?P1=1793147104&P2=404&P3=2&P4=nDU0jhVs1wYaug1pUuopYsMCIgOzZkse2hWxqCs8axu67tjUbv6t0nrafxrXs4whnUjfyDzXhYSvIgCeRuyCvw%3d%3d)  
 
 ## canary x86
-**最新版本**：158.0.4358.0  
-**文件大小**：177.37 MB  
-**文件名**：MicrosoftEdge_X86_158.0.4358.0.exe  
-**校验值（Sha256）**：9d60323d17a7e26176bc42b3e3da3bd2e0ea666b1751923034228f3790125ce3  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/83febe1e-e9d9-4040-9b00-c45bfbf3078f?P1=1793395391&P2=404&P3=2&P4=kgkXxTdSCo6Np1w07UZB2%2f3SwPbk57dr7oo%2b09hsIYc0Zz1Kk9q8XyUvP9WgX7sTITXdFCFLQMyfRG4amlLLRA%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/83febe1e-e9d9-4040-9b00-c45bfbf3078f?P1=1793395391&P2=404&P3=2&P4=kgkXxTdSCo6Np1w07UZB2%2f3SwPbk57dr7oo%2b09hsIYc0Zz1Kk9q8XyUvP9WgX7sTITXdFCFLQMyfRG4amlLLRA%3d%3d)  
+**最新版本**：158.0.4359.0  
+**文件大小**：228.06 MB  
+**文件名**：MicrosoftEdge_X86_158.0.4359.0.exe  
+**校验值（Sha256）**：6141c7c180d1ef60c2929e24c4462a246707cafb201c48b2b5cb823f63911b12  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ef977456-d26e-4dd2-ba8b-35df92cffcf0?P1=1793470745&P2=404&P3=2&P4=BZ4G1PE6umJQgnzILRpA0x6CMdDxkDYGoEXzxJ8LqFdxwpSh0N20MA4smy0tgEZkYX5c2jPGDnDL5hg6ExWyrA%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ef977456-d26e-4dd2-ba8b-35df92cffcf0?P1=1793470745&P2=404&P3=2&P4=BZ4G1PE6umJQgnzILRpA0x6CMdDxkDYGoEXzxJ8LqFdxwpSh0N20MA4smy0tgEZkYX5c2jPGDnDL5hg6ExWyrA%3d%3d)  
 
 ## canary x64
-**最新版本**：158.0.4358.0  
-**文件大小**：200.55 MB  
-**文件名**：MicrosoftEdge_X64_158.0.4358.0.exe  
-**校验值（Sha256）**：4d5ec039e9d0bbfcaece2556631a5e319d186c52a396aab1dcdede653a03ecf4  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/240188fb-6910-445e-937b-957c2b77f2fd?P1=1793395391&P2=404&P3=2&P4=NZHWEdBZiNcRf7XepR0mqabmH6ajjeEchdRg0ImRzEXz1uvvJ5cg5g4P16GEqMPwmU5bdSswgQlCuY7AF0%2fmCQ%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/240188fb-6910-445e-937b-957c2b77f2fd?P1=1793395391&P2=404&P3=2&P4=NZHWEdBZiNcRf7XepR0mqabmH6ajjeEchdRg0ImRzEXz1uvvJ5cg5g4P16GEqMPwmU5bdSswgQlCuY7AF0%2fmCQ%3d%3d)  
+**最新版本**：158.0.4359.0  
+**文件大小**：258.76 MB  
+**文件名**：MicrosoftEdge_X64_158.0.4359.0.exe  
+**校验值（Sha256）**：0a61c3a0df8f98037c5ec387fb6940b06d6cf2175a0071ed5ab25a08b51776f5  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f6db04f-df96-47da-b35d-5dd2a47c3a67?P1=1793470745&P2=404&P3=2&P4=SUVqHYAAd0Bk6ufc83EFkN3arqPVsyUxRKfaHyM9ZHNGW5IRfw8AqO9HARWtKegyPWtmifuVN70RjCAXDZMC4w%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f6db04f-df96-47da-b35d-5dd2a47c3a67?P1=1793470745&P2=404&P3=2&P4=SUVqHYAAd0Bk6ufc83EFkN3arqPVsyUxRKfaHyM9ZHNGW5IRfw8AqO9HARWtKegyPWtmifuVN70RjCAXDZMC4w%3d%3d)  
 
 ## canary ARM64
-**最新版本**：158.0.4358.0  
-**文件大小**：203.47 MB  
-**文件名**：MicrosoftEdge_ARM64_158.0.4358.0.exe  
-**校验值（Sha256）**：572f00bbe2278b7e7dfe2dcf9460e3575e09514d4399b3643738202490e7f0d8  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/94fc462b-3e62-49b4-a64b-89a9f7300bc3?P1=1793395392&P2=404&P3=2&P4=SLAGQgxAQ9nfFW%2bYy4U9Hnrd%2fqdzgsbqb%2bnClOoJLpLIvtTWU57l16EqBJEl3%2bqo8%2bz%2bXLvjq6QwSXeJ%2fOERIg%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/94fc462b-3e62-49b4-a64b-89a9f7300bc3?P1=1793395392&P2=404&P3=2&P4=SLAGQgxAQ9nfFW%2bYy4U9Hnrd%2fqdzgsbqb%2bnClOoJLpLIvtTWU57l16EqBJEl3%2bqo8%2bz%2bXLvjq6QwSXeJ%2fOERIg%3d%3d)  
+**最新版本**：158.0.4359.0  
+**文件大小**：261.2 MB  
+**文件名**：MicrosoftEdge_ARM64_158.0.4359.0.exe  
+**校验值（Sha256）**：e449541af223c9152a5f2b3a0bc923801721af20fffeea4f54ebb6547b913204  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e3cf4733-d578-4f0d-81fa-8df957d3604e?P1=1793470745&P2=404&P3=2&P4=PlC9elg4XRineS7EP12bpaqujl3z8padvkD0sUp%2bFd17oOf4f%2bfKjj9XSIsql3Pvx8DUgCfEEHNQ3abPQD1nug%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e3cf4733-d578-4f0d-81fa-8df957d3604e?P1=1793470745&P2=404&P3=2&P4=PlC9elg4XRineS7EP12bpaqujl3z8padvkD0sUp%2bFd17oOf4f%2bfKjj9XSIsql3Pvx8DUgCfEEHNQ3abPQD1nug%3d%3d)  
 
