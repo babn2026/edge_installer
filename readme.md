@@ -2,7 +2,7 @@
 稳定版存档：<https://github.com/babn2026/edge_installer/releases>
 
 最后检测更新时间
-2026-11-13 21:59:10 (UTC+8)
+2026-11-14 05:12:21 (UTC+8)
 
 ## 注意
 * Microsoft 直链会过期，请及时保存。
@@ -124,9 +124,9 @@
 **下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/006a3c60-9354-4efd-b069-e1d8b659d2e3?P1=1795183150&P2=404&P3=2&P4=IuonKuzGEQt1NX23I4YjdV6t3QC4oVf1idXx%2bP3AsACRCeLuC5W7rrFZTM3x8ynqm%2fby5k5z15%2fyZTRtPsUXCg%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/006a3c60-9354-4efd-b069-e1d8b659d2e3?P1=1795183150&P2=404&P3=2&P4=IuonKuzGEQt1NX23I4YjdV6t3QC4oVf1idXx%2bP3AsACRCeLuC5W7rrFZTM3x8ynqm%2fby5k5z15%2fyZTRtPsUXCg%3d%3d)  
 
 ## canary ARM64
-**最新版本**：159.0.4399.0  
-**文件大小**：263.35 MB  
-**文件名**：MicrosoftEdge_ARM64_159.0.4399.0.exe  
-**校验值（Sha256）**：75cd3272715645bc5f6a49bf2b83893166b1f8a924cc1ebe266992f1958efb82  
-**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/aae4bf2d-b351-438f-baad-b31a7eb5903a?P1=1795151843&P2=404&P3=2&P4=ezJDTBd9IoLAUlu5EUG5sdQWgjTN0LRVmnXEFPOXbsY9gDBAn74dJPqQKR93gNzJ3oXa241vaqLOw8k1DCswtA%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/aae4bf2d-b351-438f-baad-b31a7eb5903a?P1=1795151843&P2=404&P3=2&P4=ezJDTBd9IoLAUlu5EUG5sdQWgjTN0LRVmnXEFPOXbsY9gDBAn74dJPqQKR93gNzJ3oXa241vaqLOw8k1DCswtA%3d%3d)  
+**最新版本**：159.0.4400.0  
+**文件大小**：263.33 MB  
+**文件名**：MicrosoftEdge_ARM64_159.0.4400.0.exe  
+**校验值（Sha256）**：a6c7735547dd3251eba05b64ab3bec320251e0abe87db8f3605fa614e0932b97  
+**下载链接**：[https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/5e6500fe-9ab9-4c9d-86f9-481153788196?P1=1795209141&P2=404&P3=2&P4=iAsAISgcMClqQ6nEax6VzRKZYOMAz%2bTiJ6Yxez%2bUB1zUfn%2feXO4R1KSIR7aTiR%2fCwIpqPVMJg1ptepqiM3I48g%3d%3d](https://msedge.sb.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/5e6500fe-9ab9-4c9d-86f9-481153788196?P1=1795209141&P2=404&P3=2&P4=iAsAISgcMClqQ6nEax6VzRKZYOMAz%2bTiJ6Yxez%2bUB1zUfn%2feXO4R1KSIR7aTiR%2fCwIpqPVMJg1ptepqiM3I48g%3d%3d)  
 
